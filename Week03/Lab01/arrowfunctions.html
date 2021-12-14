@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab 1 Arrow Functions</title>
+</head>
+
+<body>
+<script>
+
+const ten1 = _ => 10
+
+console.log(ten1()) 
+
+const ten2 = () => 10
+ 
+console.log(ten2()) 
+
+const logger1 = arg => {
+  console.log(arg)
+}
+
+logger1('Hello world!')
+
+const logger2 = (arg) => {
+  console.log(arg)
+}
+
+logger2('Hello world!')
+
+const multiply1 = (num1, num2) => num1 * num2
+
+console.log(multiply1(5,4))
+
+const multiply2 = (num1 , num2) => {
+  return num1 * num2
+}
+
+console.log(multiply2(5,4))
+
+</script>
+
+</body>
+</html>

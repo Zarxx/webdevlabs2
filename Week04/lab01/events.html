@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Week04 lab01 exercise 3</title>
+<style>
+   
+.clicked {
+   font-weight:bold;
+   font-style:italic;
+   background-color:blue;
+   color:yellow;
+}	   
+</style>
+</head>
+<body>
+<p>
+khdgkldfhjkghgjkdfhjkdfgjhkfdgkjdfsdsfsdf
+</p>
+
+<p>
+normal
+</p>
+<script>
+
+
+
+
+
+document.body.addEventListener('click', () => console.log('Clicked!'))
+const parag = document.querySelector('p')
+parag.addEventListener('click', () =>  parag.classList.toggle('clicked'))
+
+</script>
+</body>
+</html>

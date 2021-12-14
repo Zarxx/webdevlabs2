@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab One Exercise Three</title>
+</head>
+<body>
+    <script>
+        let quantity, tPrice, cprice;
+        const uprice = 3.50;
+        const vrate = 0.21;
+
+
+        quantity = parseInt(prompt("please enter quantity here"))
+        cprice = uprice * quantity;
+        tPrice = cprice * vrate + cprice;
+        document.write("the total cost with 21% VAT is " + tPrice)
+    </script>
+</body>
+
+</html>

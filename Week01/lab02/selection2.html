@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 2 Exercise 4</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let wrong = 0
+    let ans = 4
+
+    do
+    {
+        num=parseInt(prompt("Enter a number between 1- 10", ""))
+        wrong++
+        if(num < ans)
+        {
+            alert("Number too low")
+        }
+        else if(num > ans)
+        {
+            alert("Number too high")
+        }
+        else alert("Guessed correctly in " + wrong + " attempts")
+    }
+    while(ans !== num)
+</script>
+</html>

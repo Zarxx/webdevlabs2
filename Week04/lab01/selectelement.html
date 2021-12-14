@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+	<style>
+
+	</style>
+  </head>
+  <body>
+        <ul id="star-wars-characters">
+                <li class="character luke" data-type="hero">Luke Skywalker</li>
+                 <li class="character yoda" data-type="master">Yoda</li>
+                <li class="character badboy" data-type="villain">Darth Vader</li>
+                </ul>
+                
+  <script>
+  
+  const characters1 = document.querySelector('#star-wars-characters')
+console.log(characters1)
+  
+const characters2 = document.querySelector('ul')
+console.log(characters2)
+
+const luke1 = document.querySelector('.luke')
+console.log(luke1)
+
+const luke2 = characters1.querySelector('li')
+console.log(luke2)
+
+const luke3 = characters1.querySelector('[data-type=hero]')
+console.log(luke3)
+
+const yoda1 = characters1.querySelector('.yoda')
+console.log(yoda1)
+
+const yoda2 = characters2.querySelector('[data-type=master]')
+console.log(yoda2)
+
+const badboy1 = characters2.querySelector('.badboy')
+console.log(badboy1)
+
+const badboy2 = characters2.querySelector('[data-type=villain]')
+console.log(badboy2)
+
+  </script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab 1 Validate My Calculator</title>
+</head>
+
+<body>
+<h1>Calculator (with valid numbers) </h1>
+<script>
+const checkNumber = (number) => {
+    while (number==null || number.length==0 || isNaN(number)){
+        alert("Please enter a valid number")
+        number = prompt("Re-enter the number", "")
+    }
+    return number
+}   
+
+let firstNum = parseInt(prompt("Enter the first number:"))
+firstNum = checkNumber(firstNum)
+    
+let secondNum = parseInt(prompt("Enter the second number:"))
+secondNum = checkNumber(secondNum)
+
+let addResult = firstNum + secondNum
+let subResult = firstNum - secondNum
+let mulResult = firstNum * secondNum
+let divResult = firstNum / secondNum
+
+document.write("Addition result: " + firstNum + " + " + secondNum + " = " + addResult + "<br>")
+document.write("Subtraction result: " + firstNum + " - " + secondNum + " = " + subResult + "<br>")    
+document.write("Multiplication result: " + firstNum + " * " + secondNum + " = " + mulResult + "<br>")
+document.write("Division result: " + firstNum + " / " + secondNum + " = " + divResult)
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

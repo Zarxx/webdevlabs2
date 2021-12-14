@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab 2 Excercise 2</title>
+</head>
+
+<body>
+<h1>Array Methods</h1>
+<script>
+let people = [
+  'Benjamin Franklin',
+  'Thomas Edison',
+  'Franklin Roosevelt',
+  'Mahatma Gandhi',
+  'Napoleon Bonaparte',
+  'Abraham Lincoln'
+]
+document.write("<b>" + people + "</b>");
+document.write("<br><b>What is the index of Mahatma Gandhi in this list of people?</b> ")
+const gandhi = people.indexOf('Mahatma Gandhi')
+document.write(gandhi + "<br>")
+
+
+document.write("<br><b>Add Winston Churchill and Albert Einstein to the start of the list with unshift.</b><br>")
+const array1 = people.slice()
+array1.unshift('Winston Churchill', 'Albert Einstein')
+document.write(array1 + "<br>")
+
+
+document.write("<br><b>" + people + "</b><br>")
+document.write("<b>Add Charles Darwin and Walt Disney to the end of the list with push</b><br>")
+const array3 = people.slice()
+array3.push('Charles Darwin', 'Walt Disney')
+document.write(array3 + "<br>")
+
+
+
+document.write("<br><b>" + people + "</b><br>")
+document.write("<b>Add Pablo Picasso and Ludwig van Beethoven after Mahatma Gandhi. Use splice.</b><br>")
+const array5 = people.slice()
+const gandhiIndex = array5.indexOf('Mahatma Gandhi')
+array5.splice(gandhiIndex + 1, 0, 'Pablo Picasso', 'Ludwig van Beethoven')
+document.write(array5 + "<br>")
+
+
+document.write("<br><b>" + people + "</b><br>")
+document.write("<b>Remove Benjamin Franklin and Thomas Edison from start of list with shift</b><br>")
+const array6 = people.slice()
+array6.shift()
+array6.shift()
+document.write(array6 + "<br>")
+
+document.write("<br><b>" + people + "</b><br>")
+document.write("<b>Remove Napoleon Bonaparte and Abraham Lincoln from end of list with pop</b><br>")
+const array8 = people.slice()
+array8.pop()
+array8.pop()
+document.write(array8 + "<br>")
+
+
+
+document.write("<br><b>" + people + "</b><br>")
+document.write("<b>Remove Mahatma Gandhi with splice</b><br>")
+const array10 = people.slice()
+const mahatmaIndex = array10.indexOf('Mahatma Gandhi')
+array10.splice(mahatmaIndex, 1)
+document.write(array10 + "<br>")
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
